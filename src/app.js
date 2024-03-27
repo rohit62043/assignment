@@ -1,5 +1,5 @@
 const fs = require("fs")
-const express = require("express")
+console.log("Hello World")
 // Goal
 // Create an express server that listens on port 3000 
 // add a post route that logs the request body and the raw body to the console
