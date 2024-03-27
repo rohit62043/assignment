@@ -1,0 +1,16 @@
+.idea
+metadata.bin
+python/__pycache__
+python/output
+test.csv
+__pycache__
+__test_cache__
+__sh_cache__
+
+age.stderr
+metadata.bin
+metadata.json
+
+ageED
+ageR
+node_modules/
