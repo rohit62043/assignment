@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/ramped-fire/proof-merkell#readme",
   "dependencies": {
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.2.0",
     "fs": "^0.0.1-security"
   }
 }
